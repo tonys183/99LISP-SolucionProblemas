@@ -2,34 +2,24 @@
 
 (define lista '(a b c d))
 
-(define myLength
-    (lambda (L)
-    (cond ((null? L) 0)
-        (else (+ 1 (myLength(cdr L)))))))
+(define nth
+  (lambda (n L)
+    (cond ((= n 0) (car L))
+        (else (nth (- n 1) (cdr L))))))
 
-(define element-at
-    (lambda (L n)
-    (cond ((= n 0)(car L))
-        (else (element-at (cdr L)(- n 1))))))
+(define remove-nth 
+    (lambda (n L)
+    (cond ((null? L) '()) 
+        ((= n 0) (cdr L))
+        (else (cons (car L) (remove-nth (- n 1) (cdr L)))))))
 
-(define remove-at
-    (lambda (L i)
-    (cond ((null? L) L)
-        ((= i 0) (cdr L))
-        (else (cons (car L) (remove-at (cdr L) (- i 1)))))))
-
-(define rnd-permu-select
-    (lambda (L i)
-    (cons (element-at L i)
-          (rnd-permu-aux (remove-at L i)))))
-
-(define rnd-permu-aux
-    (lambda (L)
-    (cond ((null? L) L)
-        (else (rnd-permu-select L (random (myLength L)))))))
+(define rnd-permu-helper
+    (lambda (i L)
+    (cons (nth i L) (rnd-permu (remove-nth i L)))))
 
 (define rnd-permu
     (lambda (L)
-    (rnd-permu-aux L)))
+    (cond ((null? L) '())
+        (else (rnd-permu-helper (random (length L)) L)))))
 
 (rnd-permu lista)
