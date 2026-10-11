@@ -1,10 +1,10 @@
 # 99 Problemas de Lisp
 
 <p align="center">
-  <img alt="Scheme" src="https://img.shields.io/badge/Scheme-9F1D20?style=flat-square&logo=racket&logoColor=white">
-  <img alt="Prolog" src="https://img.shields.io/badge/Prolog-E61B23?style=flat-square">
-  <img alt="Erlang" src="https://img.shields.io/badge/Erlang-A90533?style=flat-square&logo=erlang&logoColor=white">
-  <a href="LICENSE"><img alt="Licencia GPL-3.0" src="https://img.shields.io/github/license/tonys183/99LISP-SolucionProblemas?style=flat-square&label=Licencia&logo=opensourceinitiative&logoColor=white"></a>
+  <img alt="Scheme" src="https://img.shields.io/badge/Scheme-9F1D20?style=plastic&logo=racket&logoColor=white">
+  <img alt="Prolog" src="https://img.shields.io/badge/-Prolog-CA4245?style=plastic">
+  <img alt="Erlang" src="https://img.shields.io/badge/Erlang-A90533?style=plastic&logo=erlang&logoColor=white">
+  <a href="LICENSE"><img alt="Licencia GPL-3.0" src="https://img.shields.io/github/license/tonys183/99LISP-SolucionProblemas?style=plastic&label=Licencia&logo=opensourceinitiative&logoColor=white"></a>
 </p>
 
 <p align="center">
